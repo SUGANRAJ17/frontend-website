@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+   font-family: "Merriweather", serif;
+}
+body{
+    background-color: #252b43;
+}
+/* header */
+header{
+    background-color: #3d4562;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.logo h1{
+    font-size: 53px;
+    padding: 10px;
+    font-style: italic;
+    color: #fff;
+}
+.logo h1 span{
+    color: green;
+}
+header ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+header .menus ul li:hover{
+    background-color: bisque;
+    transition: all 0.8s ease-in-out;
+}
+header .menus ul li:hover a{
+    font-weight: 700;
+}
+header a{
+    text-decoration: none;
+    color: rgb(246, 241, 241);
+    font-size: 18px;
+}
+.menusbtn button{
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+}
+.menusbtn .btn1{
+    color: #fff;
+}
+.menusbtn .btn2{
+    background-color: #21a5f0;
+    padding: 10px;
+    border-radius: 10px;
+    color:  #fff;
+    font-weight: 600;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center ;
+}
+
+/* hero section */
+
+.leftpart{
+    padding: 10px;
+    margin: 10px;
+    width: 600px;
+}
+.leftpart h4{
+    color: aqua;
+    padding: 10px;
+}
+.leftpart h1{
+    padding: 6px 10px;
+    font-size: 56px;
+    color: white;
+}
+.leftpart p{
+    padding: 6px 10px;
+    color: white;
+}
+.herobtn button {
+    padding: 10px;
+    margin: 10px 6px;
+    width: 170px;
+}
+.herobtn button:nth-child(1){
+    border: none;
+    background-color: #21a5f0;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.herobtn button:nth-child(2){
+    border: 1px solid #00eaff;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.rightpart {
+    padding: 10px;
+    margin: 10px;
+    width: 600px;
+    position: relative;
+}
+.rightpart .teacherbox{
+    background-color: aquamarine;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+}
+.rightpart  img:nth-child(1){
+    width: 400px;
+    padding: 10px;
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    z-index: 1;
+}
+.rightpart  img:nth-child(2){
+    width: 300px;
+    border: 5px solid white;
+    border-radius: 6px;
+    position: absolute;
+    top: 200PX;
+    left: 25px;
+    z-index: 1;
+}
+.herosec{
+    display: flex;
+    justify-content: center;
+    /* padding: 75px 50px;
+     */
+     padding-top: 140px;
+     padding-bottom: 75px;
+}
+/* second sec */
+.secondsec{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 40px;
+}
+    
+/* boxses sec */
+.mainbox{
+    display: flex;
+    justify-content: center;
+    padding: 75px 40px;
+}
+.boxes{
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid floralwhite;
+    width: 300px;
+}
+.boxes img{
+    width: 50px;
+    padding: 10px;
+}
+.boxes .icon{
+        background-color: #ebb5b5c4;
+    padding: 5px;
+    width: 60px;
+    margin: 10px 0;
+    text-align: center;
+    border: 1px solid #bbadad;
+    border-radius: 10px;
+}
+.boxes .boxcontent h4{
+    font-size: 18px;
+    padding: 5px;
+}
+.boxes .boxcontent p{
+    font-size: 14px;
+    padding: 5px;
+}
+.boxcontent .line{
+    border: 3px solid red;
+    margin: 5px 8px;
+    width: 80px;
+    border-radius: 10px;
+}
+
+/* footer */
+footer{
+    background-color: #3d4562;
+    color: #fff;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width:320px) and (max-width:480px) {
+    header{
+        display: block;
+    }
+    header ul li{
+        display: block;
+    }
+    .menus,.menusbtn{
+        display: none;
+    }
+    .herosec{
+        display: block;
+        padding: 75px 0;
+        height: 200vh;
+    }
+    .leftpart,.rightpart{
+        width: inherit;
+    }
+    .leftpart h1{
+        font-size: 40px;
+    }
+    .rightpart img:nth-child(2){
+    width: 195px;
+    }
+    .rightpart img:nth-child(1){
+        width: 300px;
+        right: 0;
+    }
+    .mainbox{
+        display: block;
+        padding: 75px 0;
+    }
+    .boxes{
+        width: inherit;
+    }
+}
